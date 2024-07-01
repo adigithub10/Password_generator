@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'League Spartan';
+}
+.container{
+    max-width: 100vw;
+    height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: hsla(190, 74%, 34%, 1);
+
+background: linear-gradient(0deg, hsla(190, 74%, 34%, 1) 37%, hsla(190, 42%, 48%, 1) 55%, hsla(190, 40%, 57%, 1) 71%, hsla(190, 60%, 61%, 1) 100%);
+
+background: -moz-linear-gradient(0deg, hsla(190, 74%, 34%, 1) 37%, hsla(190, 42%, 48%, 1) 55%, hsla(190, 40%, 57%, 1) 71%, hsla(190, 60%, 61%, 1) 100%);
+
+background: -webkit-linear-gradient(0deg, hsla(190, 74%, 34%, 1) 37%, hsla(190, 42%, 48%, 1) 55%, hsla(190, 40%, 57%, 1) 71%, hsla(190, 60%, 61%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#168196", endColorstr="#479BAC", GradientType=1 );
+}
+h1{
+   color:gray;
+   opacity: 1;
+   letter-spacing: 2px;
+   text-align: center;
+   line-height: 1.2;
+
+}
+.for_border{
+    border: 2px solid whitesmoke;
+    padding: 30px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgb(27, 27, 67);
+}
+.display-cont{
+    background-color:rgb(35, 47, 98);
+    border-radius:0.5rem;
+    border-bottom: 0.35 solid rgb(34, 34, 80);
+    position: relative;
+    height: 2.4rem;
+    top: 0.2rem;
+
+
+   
+    
+
+}
+#password{
+    background-color: transparent;
+    border-bottom: 2px solid transparent ;
+    width: 80%;
+    height: 100%;
+ border-right: 2px solid transparent;
+ position: relative;
+ bottom: 4px;
+ font-weight:400;
+ font-size: 1.5rem;
+ color: rgb(189, 222, 222);
+}
+.display::placeholder{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    line-height: 30px;
+    
+}
+.display-cont button{
+    position: absolute;
+    top: 23%;
+    right: 1.5rem;
+
+
+}
+.input{
+    color: aliceblue;
+    font-family: 'League Spartan';
+
+    width: 100%;
+
+
+}
+.length{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    align-items: center;
+
+}
+.lengthnum{
+    color: skyblue;
+}
+.checkborder{
+    border: 2px solid rgb(46, 46, 81);
+    padding: 0.5rem 0;
+    line-height: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(46, 46, 81);
+
+    
+}
+.strength_cont{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.74rem;
+    margin-bottom: 1.5rem;
+}
+.indicator{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.str{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.generate_btn{
+    background-color:rgb(68, 80, 133); 
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 400;
+    color:rgb(176, 164, 164);
+    padding: 0.5rem 0.2rem;
+    border-radius: 10px;
+    border: 2px solid gray;
+    box-shadow: 2px 3px 7px  gray;
+    
+}
+.generate_btn:hover{
+    background-color: white;
+    color: navy;
+}
+.forcheck{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0 1rem;
+    font-size: 1.3rem;
+
+}
+.forcheck input{
+    appearance: none;
+   width: 20px;
+   height: 20px;
+   border: 1px solid gray;
+   position: relative;
+   border-radius: 0.35rem;
+
+}
+.forcheck input:checked{
+    background-color: rgb(135, 135, 175);
+}
+.forcheck input:checked::before{
+content: "\2714";
+position: absolute;
+font-size: 1.05rem;
+font-weight: 600;
+
+
+
+}
+.slider{
+    appearance: none;
+    width: 100%;
+    cursor: pointer;
+    background-color:rgb(68, 80, 133) ;
+    border-radius: 1rem;
+   
+    margin-bottom: 1.1rem;
+    height: 0.95rem;
+    background-repeat: no-repeat;
+
+
+}
+.slider ::-webkit-slider-thumb{
+/* appearance: none; */
+/* height: 2rem;
+width: 2rem;
+border-radius: 50%;
+color: navy;
+cursor: pointer;
+margin-top: -3px;
+transition: all 100ms ease-in;
+z-index: 1; */
+
+
+    
+}
+.slider:focus{
+    outline: 1px solid white;
+}
+.slider::-webkit-slider-thumb:hover{
+    background-color: black;
+    height: 1.5rem;
+    width: 1.5rem;
+}
